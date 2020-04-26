@@ -23,5 +23,8 @@ https://housing-price-prediction-service-fohqva5nua-uc.a.run.app/
 4. Updates are rolled out with zero downtime
 5. Supports auto-scaling to handle exponential growth in the number of requests per second
 
+#### DockerHub Container:
+https://hub.docker.com/r/anushirahatti/housing-price-prediction-app
+
 #### Demo Video:
 Link here
