@@ -1,4 +1,4 @@
-FROM python:3.7.3-stretch
+FROM ubuntu:16.04
 
 # Working Directory
 WORKDIR /housing-price-prediction-app
