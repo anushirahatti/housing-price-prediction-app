@@ -14,4 +14,4 @@ Aniruddha Sudhindra Shirahatti, Homeira Azari, Jack Phillips, Mrunmayee Kulkarni
 - Google Cloud Platform: Cloud Run
 
 #### Demo Video:
-Link here..
+Link here
