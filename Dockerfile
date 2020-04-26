@@ -16,8 +16,6 @@ RUN pip install --upgrade pip &&\
 
 COPY . .
 
-ENTRYPOINT ["python"]
+#CMD ["model.py"]
 
-CMD ["model.py"]
-
-CMD ["app.py"]
+ENTRYPOINT ["python", "app.py"]
