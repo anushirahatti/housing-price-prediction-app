@@ -1,7 +1,5 @@
 FROM python:3.7.3-stretch
 
-MAINTAINER Aniruddha
-
 # Working Directory
 WORKDIR /housing-price-prediction-app
 
