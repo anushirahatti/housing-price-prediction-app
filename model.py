@@ -19,6 +19,12 @@ dataset = pd.read_csv('Final.csv')
 #                'nine':9, 'ten':10, 'eleven':11, 'twelve':12, 'zero':0, 0: 0}
 #    return word_dict[word]
 
+#y_column = 'Average'
+#y = dataset[y_column]
+# Define our independent variables
+#x_columns = dataset.drop(['Average','High.Value','High.2018','Low.2018'], axis = 1) 
+#X = x_columns
+
 X = dataset[['Year', 'CPI.Average', 'Low.Value']]
 
 y = dataset['Average']
@@ -33,7 +39,7 @@ regressor = LinearRegression()
 regressor.fit(X, y)
 
 # Saving model to disk
-pickle.dump(regressor, open('model.pkl','wb'))
+pickle.dump(regressor, open('model.pkl','wb'), protocol=3)
 
 # Loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
