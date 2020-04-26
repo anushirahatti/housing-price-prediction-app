@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
     """Return a friendly HTTP greeting."""
-    return '<center><h1>Housing Price Prediction App 2020</h1></center>'
+    return '<center><h1>Housing Price Prediction App - By Clouders</h1></center>'
 
 @app.route('/deliver')
 def hey():
