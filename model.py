@@ -5,23 +5,23 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import pickle
 
-dataset = pd.read_csv('hiring.csv')
+dataset = pd.read_csv('Final.csv')
 
-dataset['experience'].fillna(0, inplace=True)
+#dataset['experience'].fillna(0, inplace=True)
 
-dataset['test_score'].fillna(dataset['test_score'].mean(), inplace=True)
+#dataset['test_score'].fillna(dataset['test_score'].mean(), inplace=True)
 
-X = dataset.iloc[:, :3]
+#X = dataset.iloc[:, :3]
 
 #Converting words to integer values
-def convert_to_int(word):
-    word_dict = {'one':1, 'two':2, 'three':3, 'four':4, 'five':5, 'six':6, 'seven':7, 'eight':8,
-                'nine':9, 'ten':10, 'eleven':11, 'twelve':12, 'zero':0, 0: 0}
-    return word_dict[word]
+#def convert_to_int(word):
+#    word_dict = {'one':1, 'two':2, 'three':3, 'four':4, 'five':5, 'six':6, 'seven':7, 'eight':8,
+#                'nine':9, 'ten':10, 'eleven':11, 'twelve':12, 'zero':0, 0: 0}
+#    return word_dict[word]
 
-X['experience'] = X['experience'].apply(lambda x : convert_to_int(x))
+X = dataset[['Year', 'CPI.Average', 'Low.Value']]
 
-y = dataset.iloc[:, -1]
+y = dataset['Average']
 
 #Splitting Training and Test Set
 #Since we have a very small dataset, we will train our model with all availabe data.
@@ -37,4 +37,4 @@ pickle.dump(regressor, open('model.pkl','wb'))
 
 # Loading model to compare the results
 model = pickle.load(open('model.pkl','rb'))
-print(model.predict([[2, 9, 6]]))
+print(model.predict([[1996, 157, 4.75]]))
