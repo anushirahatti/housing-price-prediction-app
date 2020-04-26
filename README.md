@@ -19,7 +19,7 @@ https://housing-price-prediction-service-fohqva5nua-uc.a.run.app/
 #### Features:
 1. Runs on Google Cloud Platform
 2. Serverless Containerized Flask App uses Managed Cloud Run (Platform as a Service model)
-3. Uses Cloud Build to build and put Docker Container in Container Registry
+3. Uses Cloud Build Trigger to automate Containerization and Continuous Deployment of Flask app
 4. Updates are rolled out with zero downtime
 5. Supports auto-scaling to handle exponential growth in the number of requests per second
 
