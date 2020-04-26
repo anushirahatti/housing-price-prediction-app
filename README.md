@@ -7,7 +7,7 @@ US Housing Price Prediction Flask App on Google Cloud Platform (GCP)
 Aniruddha Sudhindra Shirahatti, Homeira Azari, Jack Phillips, Mrunmayee Kulkarni, Tofoya Page
 
 #### Project Architecture:
-![Architecture]()
+![Architecture](https://github.com/anushirahatti/housing-price-prediction-app/blob/master/Cloud_Run_Architecture.png)
 
 #### About Our App:
 - Flask App: US Housing Price Prediction
