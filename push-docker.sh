@@ -10,7 +10,7 @@ dockerpath="anushirahatti/housing-price-prediction-app"
 # Authenticate & Tag
 echo "Docker ID and Image: $dockerpath"
 docker login &&\
-    docker image tag 02e27200c985 $dockerpath
+    docker image tag ade5b630138f $dockerpath
 
 # Push Image
 docker image push $dockerpath 
