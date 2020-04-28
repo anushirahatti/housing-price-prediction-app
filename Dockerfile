@@ -17,9 +17,7 @@ WORKDIR /housing-price-prediction-app
 # hadolint ignore=DL3013
 #RUN pip install --upgrade pip &&\
 #    pip install --trusted-host pypi.python.org -r requirements.txt
-RUN pip install --upgrade pip &&\
-    #pip install --upgrade Cython &&\
-    pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY . /housing-price-prediction-app
 
