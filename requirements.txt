@@ -6,4 +6,3 @@ click
 matplotlib
 pandas
 sklearn
-locust
