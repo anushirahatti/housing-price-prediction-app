@@ -1,7 +1,7 @@
 FROM python:3.8-slim-buster
 
-RUN apt-get update -y && \
-    apt-get install -y python-pip python3-dev
+#RUN apt-get update -y && \
+#    apt-get install -y python-pip python3-dev
 
 COPY ./requirements.txt /housing-price-prediction-app/requirements.txt
 
