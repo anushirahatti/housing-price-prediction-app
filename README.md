@@ -14,7 +14,7 @@ Aniruddha Sudhindra Shirahatti, Homeira Azari, Jack Phillips, Mrunmayee Kulkarni
 - Google Cloud Platform: Cloud Run
 
 #### Website URL:
-https://housing-price-prediction-service-fohqva5nua-uc.a.run.app/
+https://housing-price-prediction-service-fohqva5nua-uc.a.run.app
 
 #### Features:
 1. Runs on Google Cloud Platform
@@ -27,4 +27,4 @@ https://housing-price-prediction-service-fohqva5nua-uc.a.run.app/
 https://hub.docker.com/r/anushirahatti/housing-price-prediction-app
 
 #### Demo Video:
-Link here
+[![WATCH THE DEMO](https://img.youtube.com/vi/umobVWvNvWU/0.jpg)](https://www.youtube.com/watch?v=umobVWvNvWU)
